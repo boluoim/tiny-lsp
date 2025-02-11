@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server:run:groovy": "npx vite-node ./src/groovy/direct.ts",
+    "docker:run:groovy": "docker compose -f ./languages/groovy/docker-compose.yml up -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "vscode-languageserver-protocol": "^3.17.5",
+    "vscode-ws-jsonrpc": "^3.4.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "@types/ws": "^8.5.14"
+  }
+}
